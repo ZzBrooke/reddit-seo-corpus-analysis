@@ -96,3 +96,53 @@ This project has several limitations:
 3. **Contextual Analysis Scope:** Experiment 3 used a fixed **±5-word window** to examine local contexts rather than formal statistical measures of collocation. The results therefore describe observed patterns around the selected keywords, but they do not establish statistically significant collocational relationships.
 
 Overall, this project should be viewed as a small-scale exploratory analysis. It demonstrates how Python and corpus-linguistic methods can be used to investigate content rewriting and language change, while providing a basis for further research using larger datasets, broader evaluative vocabulary, and more formal statistical methods.
+
+## 8. How to Run
+1. Clone or download this repository.
+2. Install the required Python packages:
+   ```bash
+   pip install pandas matplotlib   ```
+3. Make sure the cleaned datasets are available in the `data/` folder.
+4. Run the three experiment scripts:
+   ```bash
+   python experiment/Experiment1_lexical_diversity.py
+   python experiment/Experiment2_evaluative_language.py
+   python experiment/Experiment3_context_analysis.py
+   ```
+The cleaned datasets are included in the `data/` folder and can be used directly as the input for all three experiments.
+The preprocessing scripts are included for reference, but the original raw data are not provided in this repository.
+
+## 9. Project Structure
+```text
+reddit-seo-corpus-analysis/
+├── data/
+│   ├── reddit_comments_clean.csv
+│   └── blog_sentences_clean.csv
+├── preprocessing/
+│   ├── clean_reddit_comments.py
+│   └── clean_blog_sentences.py
+├── experiment/
+│   ├── Experiment1_lexical_diversity.py
+│   ├── Experiment2_evaluative_language.py
+│   └── Experiment3_context_analysis.py
+├── results/
+│   ├── experiment1/
+│   │   ├── Figure_1.png
+│   │   └── Figure_2.png
+│   ├── experiment2/
+│   │   ├── Figure_3.png
+│   │   └── Figure_4.png
+│   └── experiment3/
+│       ├── Figure_5.png
+│       ├── Figure_6.png
+│       ├── Figure_7.png
+│       └── Figure_8.png
+├── .gitignore
+└── README.md
+```
+* `data/` — Cleaned Reddit and SEO text used in the analysis
+* `preprocessing/` — Scripts used to clean and prepare the text
+* `experiment/` — Scripts used for the three corpus analyses
+* `results/` — Figures generated from the experiments
+* `.gitignore` — Files and folders excluded from version control
+* `README.md` — Project description, methodology, results, and limitations
