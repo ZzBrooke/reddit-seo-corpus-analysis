@@ -18,3 +18,14 @@ The dataset compares language use across two sources, both focused on the game c
 
 ### Objective
 This dataset provides a basis for analyzing how vocabulary and language use differ between community discussions and SEO-oriented game guides.
+
+## Preprocessing
+The raw text was cleaned using Python before analysis. The preprocessing steps included:
+* Converting all text to lowercase
+* Removing punctuation, underscores, and digits
+* Normalizing whitespace
+* Saving the cleaned texts as CSV files
+
+The resulting datasets were used as the input for all three experiments.
+
+The preprocessing scripts are provided in `clean_reddit_comments.py` and `clean_blog_sentences.py`.
