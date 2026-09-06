@@ -67,3 +67,18 @@ The Reddit corpus contains more community-oriented evaluative words, while the S
 
 Among the evaluative words identified, **75.61%** of Reddit examples are community-oriented, compared with **24.39%** that are guide-oriented. In the SEO corpus, **100%** of the identified evaluative words are guide-oriented.
 
+### Experiment 3: Local Contexts of evaluative keywords
+This experiment examines the local contexts of selected evaluative keywords: *best*, *strong*, *broken*, and *op*.
+
+### Methodology
+For each keyword, words appearing within a **±5-word context window** were collected. Common stopwords were removed, and the 10 most frequent context words were identified for each corpus.
+
+The context words from Reddit and SEO were then compared to examine whether the same evaluative keywords appear in different local contexts.
+
+### Results
+The context patterns differ between the two corpora:
+* **`best`:** In the SEO corpus, frequent context words include *build*, *brawl*, *nori*, *stars*, and *modes*. In Reddit, *super* is the most frequent context word, while the other context words occur only once.
+* **`strong`:** SEO contexts include *nori*, *shields*, *speed*, and *mobility*, while Reddit contexts include *should*, *super*, *position*, and *atm*.
+* **`broken` and `op`:** Both keywords occur only in the Reddit corpus in this dataset. *Broken* appears near words such as *its*, *gonna*, *not*, and *brawl*, while *op* appears near words such as *strong*, *cool*, *legendary*, and *brawler*.
+
+Overall, the results show that the same evaluative keywords can appear in different local contexts across the two corpora. SEO contexts are more closely associated with character names, builds, game modes, and gameplay-related features, while Reddit contexts include more informal and conversational expressions.
