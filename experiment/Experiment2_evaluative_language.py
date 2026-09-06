@@ -124,8 +124,8 @@ def analyze_corpus(df):
 def main():
     pd.set_option('display.max_columns', None)
         
-    reddit = pd.read_csv('reddit_comments_clean.csv')
-    seo = pd.read_csv('blog_sentences_clean.csv')
+    reddit = pd.read_csv('../data/reddit_comments_clean.csv')
+    seo = pd.read_csv('../data/blog_sentences_clean.csv')
 
     reddit_result = analyze_corpus(reddit)
     seo_result = analyze_corpus(seo)

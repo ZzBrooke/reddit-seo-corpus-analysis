@@ -121,10 +121,10 @@ def create_comparison(reddit_words, seo_words, top_n=10):
 def main():
 
     reddit = pd.read_csv(
-        'reddit_comments_clean.csv'
+        '../data/reddit_comments_clean.csv'
     )
     seo = pd.read_csv(
-        'blog_sentences_clean.csv'
+        '../data/blog_sentences_clean.csv'
     )
 
     reddit_results = analyze_corpus(reddit)
