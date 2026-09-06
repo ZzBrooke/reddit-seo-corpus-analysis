@@ -10,3 +10,11 @@ To examine this difference, I use Python and corpus-linguistic methods to compar
 * Lexical diversity
 * Evaluative vocabulary
 * Local contexts of evaluative keywords
+
+## Corpus & Data
+The dataset compares language use across two sources, both focused on the game characters Wendy and Nori:
+* **Reddit Comments (n = 164):** User discussions from Reddit threads about **Wendy** and **Nori**.
+* **SEO Game Guides (n = 141):** Sentences extracted from SEO-oriented build guides for the same characters.
+
+### Objective
+This dataset provides a basis for analyzing how vocabulary and language use differ between community discussions and SEO-oriented game guides.
