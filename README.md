@@ -30,8 +30,7 @@ The resulting datasets were used as the input for all three experiments.
 
 The preprocessing scripts are provided in `clean_reddit_comments.py` and `clean_blog_sentences.py`.
 
-## Experiment
-### Experiment 1: Lexical Diversity
+## Experiment 1: Lexical Diversity
 This experiment compares lexical diversity between the Reddit and SEO corpora using **Type-Token Ratio (TTR)** and **Standardized Type-Token Ratio (STTR)**.
 
 ### Methodology
@@ -47,7 +46,7 @@ TTR across the 100-token windows was also visualized to examine how lexical dive
 
 The SEO corpus shows slightly higher overall TTR and STTR scores than the Reddit corpus, indicating slightly greater lexical diversity in this dataset.
 
-### Experiment 2: Evaluative Vocabulary
+## Experiment 2: Evaluative Vocabulary
 This experiment compares the use of **community-oriented** and **guide-oriented** evaluative vocabulary in the Reddit and SEO corpora.
 
 ### Methodology
@@ -65,9 +64,9 @@ The frequency of words from each category was counted for each corpus. Frequenci
 
 The Reddit corpus contains more community-oriented evaluative words, while the SEO corpus contains more guide-oriented evaluative words. After normalization, the difference remains clear: community-oriented words occur more frequently in Reddit, whereas guide-oriented words are much more frequent in SEO.
 
-Among the evaluative words identified, **75.61%** of Reddit examples are community-oriented, compared with **24.39%** that are guide-oriented. In the SEO corpus, **100%** of the identified evaluative words are guide-oriented.
+Among the evaluative words identified, **75.61%** of Reddit instances are community-oriented, compared with **24.39%** that are guide-oriented. In the SEO corpus, **100%** of the identified evaluative words are guide-oriented.
 
-### Experiment 3: Local Contexts of evaluative keywords
+## Experiment 3: Local Contexts of Evaluative Keywords
 This experiment examines the local contexts of selected evaluative keywords: *best*, *strong*, *broken*, and *op*.
 
 ### Methodology
@@ -83,7 +82,7 @@ The context patterns differ between the two corpora:
 
 Overall, the results show that the same evaluative keywords can appear in different local contexts across the two corpora. SEO contexts are more closely associated with character names, builds, game modes, and gameplay-related features, while Reddit contexts include more informal and conversational expressions.
 
-## 7. Discussion & Limitations
+## Discussion & Limitations
 ### Discussion
 Overall, the analysis suggests that community discussions and SEO game guides may cover similar gaming topics, but they differ in how evaluative information is expressed and organized. The “compression” observed at the beginning of the project is better understood not as a simple reduction in vocabulary, but as a shift toward more standardized ways of expressing evaluation.
 
