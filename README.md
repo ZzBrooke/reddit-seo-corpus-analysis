@@ -82,3 +82,17 @@ The context patterns differ between the two corpora:
 * **`broken` and `op`:** Both keywords occur only in the Reddit corpus in this dataset. *Broken* appears near words such as *its*, *gonna*, *not*, and *brawl*, while *op* appears near words such as *strong*, *cool*, *legendary*, and *brawler*.
 
 Overall, the results show that the same evaluative keywords can appear in different local contexts across the two corpora. SEO contexts are more closely associated with character names, builds, game modes, and gameplay-related features, while Reddit contexts include more informal and conversational expressions.
+
+## 7. Discussion & Limitations
+### Discussion
+Overall, the analysis suggests that community discussions and SEO game guides may cover similar gaming topics, but they differ in how evaluative information is expressed and organized. The “compression” observed at the beginning of the project is better understood not as a simple reduction in vocabulary, but as a shift toward more standardized ways of expressing evaluation.
+
+### Limitations
+This project has several limitations:
+1. **Sample Size & Sampling:** The dataset is relatively small, containing 164 Reddit comments and 141 SEO guide sentences. Both corpora were also collected from specific gaming characters and topics rather than through large-scale, systematic sampling. The results therefore mainly reflect the language patterns found in this dataset, and differences in the game, topic, or data source may have influenced the results.
+
+2. **Evaluative Vocabulary Classification:** The evaluative word lists used in Experiment 2 were developed with reference to a survey of 150 participants, including native speakers of Chinese, English, and Portuguese. However, the analysis still relies on a predefined set of vocabulary. This classification may not capture all forms of evaluative language found in the original texts, and the same word may serve different functions depending on its context.
+
+3. **Contextual Analysis Scope:** Experiment 3 used a fixed **±5-word window** to examine local contexts rather than formal statistical measures of collocation. The results therefore describe observed patterns around the selected keywords, but they do not establish statistically significant collocational relationships.
+
+Overall, this project should be viewed as a small-scale exploratory analysis. It demonstrates how Python and corpus-linguistic methods can be used to investigate content rewriting and language change, while providing a basis for further research using larger datasets, broader evaluative vocabulary, and more formal statistical methods.
