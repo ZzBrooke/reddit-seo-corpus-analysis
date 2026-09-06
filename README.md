@@ -31,7 +31,7 @@ The resulting datasets were used as the input for all three experiments.
 The preprocessing scripts are provided in `clean_reddit_comments.py` and `clean_blog_sentences.py`.
 
 ## Experiment
-### Experiment 1 — Lexical Diversity
+### Experiment 1: Lexical Diversity
 This experiment compares lexical diversity between the Reddit and SEO corpora using **Type-Token Ratio (TTR)** and **Standardized Type-Token Ratio (STTR)**.
 
 ### Methodology
@@ -46,3 +46,24 @@ TTR across the 100-token windows was also visualized to examine how lexical dive
 | **SEO**    |  1,894 |   624 | 0.3295 | 0.7733 |
 
 The SEO corpus shows slightly higher overall TTR and STTR scores than the Reddit corpus, indicating slightly greater lexical diversity in this dataset.
+
+### Experiment 2: Evaluative Vocabulary
+This experiment compares the use of **community-oriented** and **guide-oriented** evaluative vocabulary in the Reddit and SEO corpora.
+
+### Methodology
+Two word lists were used to identify evaluative language:
+* **Community-oriented words:** *broken*, *insane*, *trash*, *fun*, *overpowered*, and others
+* **Guide-oriented words:** *best*, *strong*, *effective*, *powerful*, *safe*, and others
+
+The frequency of words from each category was counted for each corpus. Frequencies were also normalized per 1,000 tokens to make the two corpora more comparable. The proportion of each category among all identified evaluative words was also calculated.
+
+### Results
+| Corpus     | Community Frequency | Guide Frequency | Community / 1,000 tokens | Guide / 1,000 tokens |
+| ---------- | ------------------: | --------------: | -----------------------: | -------------------: |
+| **Reddit** |                  31 |              10 |                    10.49 |                 3.39 |
+| **SEO**    |                   0 |              43 |                     0.00 |                22.70 |
+
+The Reddit corpus contains more community-oriented evaluative words, while the SEO corpus contains more guide-oriented evaluative words. After normalization, the difference remains clear: community-oriented words occur more frequently in Reddit, whereas guide-oriented words are much more frequent in SEO.
+
+Among the evaluative words identified, **75.61%** of Reddit examples are community-oriented, compared with **24.39%** that are guide-oriented. In the SEO corpus, **100%** of the identified evaluative words are guide-oriented.
+
