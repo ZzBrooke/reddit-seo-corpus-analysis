@@ -29,3 +29,20 @@ The raw text was cleaned using Python before analysis. The preprocessing steps i
 The resulting datasets were used as the input for all three experiments.
 
 The preprocessing scripts are provided in `clean_reddit_comments.py` and `clean_blog_sentences.py`.
+
+## Experiment
+### Experiment 1 — Lexical Diversity
+This experiment compares lexical diversity between the Reddit and SEO corpora using **Type-Token Ratio (TTR)** and **Standardized Type-Token Ratio (STTR)**.
+
+### Methodology
+The cleaned texts were split into word tokens. TTR was calculated as the ratio of unique word types to total tokens. STTR was calculated by dividing each corpus into non-overlapping windows of 100 tokens and averaging the TTR scores across the windows.
+
+TTR across the 100-token windows was also visualized to examine how lexical diversity varies throughout each corpus.
+
+### Results
+| Corpus     | Tokens | Types |    TTR |   STTR |
+| ---------- | -----: | ----: | -----: | -----: |
+| **Reddit** |  2,954 |   919 | 0.3111 | 0.7697 |
+| **SEO**    |  1,894 |   624 | 0.3295 | 0.7733 |
+
+The SEO corpus shows slightly higher overall TTR and STTR scores than the Reddit corpus, indicating slightly greater lexical diversity in this dataset.
