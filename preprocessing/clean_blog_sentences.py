@@ -20,8 +20,8 @@ def clean_text(text):
 
 
 def main():
-    input_file = 'blog_sentences_raw.csv'
-    output_file = 'blog_sentences_clean.csv'
+    input_file = '../raw_data/blog_sentences_raw.csv'
+    output_file = '../raw_data/blog_sentences_clean.csv'
 
     df = pd.read_csv(input_file)
 
