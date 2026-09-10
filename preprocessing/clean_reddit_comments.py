@@ -20,8 +20,8 @@ def clean_text(text):
 
 
 def main():
-    input_file = 'reddit_comments_raw.csv'
-    output_file = 'reddit_comments_clean.csv'
+    input_file = '../raw_data/reddit_comments_raw.csv'
+    output_file = '../raw_data/reddit_comments_clean.csv'
 
     df = pd.read_csv(input_file)
 
