@@ -19,7 +19,7 @@ def main():
     df = pd.read_csv(input_file)
 
     if 'text' not in df.columns:
-        raise ValueError('Input file must contain a /'text/' column.')
+        raise ValueError('Input file must contain a \'text\' column.')
 
     df['text'] = df['text'].apply(clean_text)
     df = df[df['text'] != ''].copy()
