@@ -58,7 +58,6 @@ def main():
     results[['TTR', 'STTR']].plot(
         kind='bar',
         figsize=(7, 5)
-
     )
 
     plt.ylabel('Score')
@@ -89,5 +88,5 @@ def main():
     plt.tight_layout()
     plt.show()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
