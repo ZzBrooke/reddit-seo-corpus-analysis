@@ -159,7 +159,6 @@ def main():
     results[
         [
             'Community Share',
-
             'Guide Share'
         ]
     ].plot(
@@ -174,5 +173,5 @@ def main():
     plt.tight_layout()
     plt.show()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
