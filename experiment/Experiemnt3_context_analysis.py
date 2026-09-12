@@ -26,8 +26,7 @@ stopwords = {
 def get_context(tokens, keyword, window_size=5):
     contexts = []
 
-    for i, token in enumerate(tokens):
-        
+    for i, token in enumerate(tokens):        
         if token == keyword:
             start = max(0, i - window_size)
             end = min(len(tokens), i + window_size + 1)
@@ -67,8 +66,7 @@ def analyze_corpus(df):
         all_context_words = []
 
         for text in df['text']:
-            tokens = tokenize(text)
-            
+            tokens = tokenize(text)          
             context_words = get_context(
                 tokens,
                 keyword
@@ -182,5 +180,5 @@ def main():
         plt.show()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
