@@ -1,10 +1,3 @@
-"""
-Clean Reddit comments for corpus analysis.
-
-Input: a CSV file containing a 'text' column.
-Output: a CSV file containing 'source' and 'text' columns.
-"""
-
 import re
 import pandas as pd
 
@@ -26,7 +19,7 @@ def main():
     df = pd.read_csv(input_file)
 
     if 'text' not in df.columns:
-        raise ValueError('Input file must contain a 'text' column.')
+        raise ValueError('Input file must contain a /'text/' column.')
 
     df['text'] = df['text'].apply(clean_text)
     df = df[df['text'] != ''].copy()
