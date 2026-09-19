@@ -49,7 +49,6 @@ def get_context(tokens, keyword, window_size=5):
 
 
 def top_context_words(context_words, top_n=10):
-
     if not context_words:
         return pd.Series(dtype=int)
 
@@ -59,7 +58,6 @@ def top_context_words(context_words, top_n=10):
 
 
 def analyze_corpus(df):
-
     keyword_contexts = {}
 
     for keyword in keywords:
@@ -150,8 +148,7 @@ def main():
             reddit_results[keyword],
             seo_results[keyword],
             top_n=10
-        )
-        
+        )       
         
         print('Top 10 context words:')
         print(comparison)
