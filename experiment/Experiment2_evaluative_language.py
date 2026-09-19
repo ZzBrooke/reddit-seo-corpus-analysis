@@ -6,6 +6,7 @@ def tokenize(text):
     return text.split()
 
 
+# Words used to compare the two types of evaluations.
 community_words = {
     'broken',
     'insane',
@@ -64,6 +65,7 @@ def category_share(category_count, total_evaluative):
         return 0.0
 
     return category_count / total_evaluative
+
 
 def analyze_corpus(df):
     tokens = []
