@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 def tokenize(text):
     return text.split()
 
@@ -15,6 +16,7 @@ def ttr(tokens):
 def sttr(tokens, window_size=100):
     scores = []
 
+    # Use fixed-size windows to make lexical diversity easier to compare.
     for i in range(0, len(tokens) - window_size + 1, window_size):
         window = tokens[i:i + window_size]
         scores.append(ttr(window))
